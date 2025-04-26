@@ -119,5 +119,3 @@ This project flips the script:
 
 MIT — Fork it, build it, scale it, ship it.
 ```
-
-Let me know if you want a matching `CONTRIBUTING.md` or docs template too.
