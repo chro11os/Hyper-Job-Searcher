@@ -2,17 +2,25 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
+use App\Models\JobIDTestModel;
 
 class JobIDTestSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        //
+        $faker = \Faker\Factory::create();
+        JobIDTestModel::create([
+            'location' => $faker -> address,
+            'job_name' => $faker -> jobTitle,
+            'job_type' => $faker -> title,
+            'job_id' => Str::random(10),
+        ]);
     }
 }
