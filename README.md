@@ -1,6 +1,3 @@
-Absolutely — here's the clean, copy-pasteable `README.md` for your project. No extra fluff, just markdown that slaps:
-
-```markdown
 # ⚡ Ultra Fast & Accurate Job Searcher
 
 **Built with 🦀 Rust (Custom Server) + 💻 Laravel + ⚛️ React + 🤖 JSearch API**
