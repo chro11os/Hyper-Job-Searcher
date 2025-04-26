@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->String('location');
             $table->String('job_name');
-            $table->String('job_type');
+            $table->String('job_company');
             $table->String('job_id');
         });
     }

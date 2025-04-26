@@ -19,7 +19,7 @@ class JobIDTestSeeder extends Seeder
         JobIDTestModel::create([
             'location' => $faker -> address,
             'job_name' => $faker -> jobTitle,
-            'job_type' => $faker -> title,
+            'job_company' => $faker -> company,
             'job_id' => Str::random(10),
         ]);
     }
