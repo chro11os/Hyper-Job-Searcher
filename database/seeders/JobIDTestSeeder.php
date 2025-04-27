@@ -21,6 +21,7 @@ class JobIDTestSeeder extends Seeder
             'job_name' => $faker -> jobTitle,
             'job_company' => $faker -> company,
             'job_id' => Str::random(10),
+            'job_link' => $faker -> url,
         ]);
     }
 }

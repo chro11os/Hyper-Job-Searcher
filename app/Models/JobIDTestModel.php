@@ -9,5 +9,5 @@ class JobIDTestModel extends Model
 {
     use HasFactory;
     protected $table = "test_job_id";
-    protected $fillable = ['location', 'job_type', 'job_id', 'job_name'];
+    protected $fillable = ['location', 'job_type', 'job_id', 'job_name','job_link'];
 }

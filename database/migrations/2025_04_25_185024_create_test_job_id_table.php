@@ -18,6 +18,7 @@ return new class extends Migration
             $table->String('job_name');
             $table->String('job_company');
             $table->String('job_id');
+            $table->String('job_link')->nullable();
         });
     }
 
