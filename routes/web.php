@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Test Page Route
 Route::get('testView',[testViewController::class, 'showPage'])->name('testView');
+
+// Test Data Pull
+Route::get('results',[testViewController::class, 'pullData'])->name('results');

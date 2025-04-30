@@ -9,7 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hello</p>
-    <p>Hi What's UP</p>
+    <a href='{{ route('') }}'></a>
 </body>
 </html>
