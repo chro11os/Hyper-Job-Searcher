@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\testViewController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/testView', function () {
-    return view('testView');
-});
+Route::get('testView',[testViewController::class, 'showPage'])->name('testView');

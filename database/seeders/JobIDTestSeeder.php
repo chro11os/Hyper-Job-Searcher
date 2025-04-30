@@ -15,13 +15,16 @@ class JobIDTestSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = \Faker\Factory::create();
-        JobIDTestModel::create([
-            'location' => $faker -> address,
-            'job_name' => $faker -> jobTitle,
-            'job_company' => $faker -> company,
-            'job_id' => Str::random(10),
-            'job_link' => $faker -> url,
-        ]);
+        for ($i = 0; $i < 10; $i++) {
+            $faker = \Faker\Factory::create();
+            JobIDTestModel::create([
+                'location' => $faker->address,
+                'job_name' => $faker->jobTitle,
+                'job_company' => $faker->company,
+                'job_id' => Str::random(10),
+                'job_link' => $faker->url,
+
+            ]);
+        }
     }
 }
