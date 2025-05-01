@@ -12,7 +12,9 @@ class testViewController extends Controller
         return view('testView');
     }
 
-    public function pullData() {
-        $results = DB::select('select * from test_job_id where id = ?', [1]);
+
+    public function getData() {
+        $getJobId = DB::table('test_job_id')->select('id', 'job_name', 'job_company', 'job_id')->get();
+        return response()->json($getJobId);
     }
 }

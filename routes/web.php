@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\testViewController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,7 @@ Route::get('/', function () {
 });
 
 // Test Page Route
-Route::get('testView',[testViewController::class, 'showPage'])->name('testView');
+Route::get('/testView',[testViewController::class, 'showPage'])->name('testView');
 
 // Test Data Pull
-Route::get('results',[testViewController::class, 'pullData'])->name('results');
+Route::get('/api/pull-data', [testViewController::class, 'getData'])->name('testView.api');

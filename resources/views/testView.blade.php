@@ -9,6 +9,24 @@
     <title>Document</title>
 </head>
 <body>
-    <a href='{{ route('') }}'></a>
+    <div class="flex box-border bg-black text-2xl text-amber-50 backdrop-grayscale p-7 m-7 bg-center content-center text-center">
+        <h1> Available Jobs </h1>
+
+    </div>
+
+    <button onclick="fetchData()">Pull Data (console only)</button>
+    <script>
+        function fetchData() {
+            fetch("{{ route('testView.api') }}")
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Fetched Data:", data);
+                })
+                .catch(error => {
+                    console.error("Error fetching data:", error);
+                });
+        }
+    </script>
+
 </body>
 </html>
