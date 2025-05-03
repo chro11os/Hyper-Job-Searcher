@@ -16,11 +16,10 @@ use Illuminate\Support\Facades\DB;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 // Test Page Route
-Route::get('/testView',[testViewController::class, 'showPage'])->name('testView');
+Route::get('/testView', [testViewController::class, 'showPage'])->name('testView');
 
 // Test Data Pull
-Route::get('/api/pull-data', [testViewController::class, 'getData'])->name('testView.api');
